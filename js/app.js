@@ -5,13 +5,9 @@ app.config(['$routeProvider', '$locationProvider',
     $routeProvider.
     when("/", {
       templateUrl: 'shoppingList.html',
-      controller: 'shoppingListController' 
+      controller: 'shoppingListController'
     });
 
     $locationProvider.html5Mode(false).hashPrefix('!');
 
   }]);
-
-app.controller("shoppingListController", function($scope) {
-  $scope.products = ["Milk", "Bread", "Cheese"];
-});
